@@ -15,7 +15,7 @@ def reconnaissance_chiffre(image, liste_modeles, S):
     
     i = image.binarisation(S)
     imag = i.localisation()
-    liste_simi = []
+    liste_simi=[]
     
     for mod in liste_modeles:
         
@@ -24,5 +24,5 @@ def reconnaissance_chiffre(image, liste_modeles, S):
         liste_simi.append(simi)
         
         
-    return liste_simi.index(max(liste_simi))
+    return (liste_simi.index(max(liste_simi)))
     
